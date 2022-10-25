@@ -19,9 +19,15 @@ def calcular_media(valores):
     return suma / len(valores)
 
 
-if __name__ == '__main__':
-    valores = [7, 3, 13, 17, 10, 8, 12, 9]
-    media = calcular_media(valores)
-    desviacion = desviacion_estandar(valores, media)
+# valores = [7, 3, 13, 17, 10, 8, 12, 9]
+nNumber = int(input("Enter the number of elements to insert: "))
+valores = []
 
-    print(desviacion)
+for i in range(0, nNumber):
+    valor = int(input("Enter the value: "))
+    valores.append(valor)
+
+media = calcular_media(valores)
+desviacion = desviacion_estandar(valores, media)
+
+print(desviacion)
