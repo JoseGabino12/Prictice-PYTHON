@@ -6,7 +6,7 @@ def desviacion_estandar(valores, media):
     for valor in valores:
         suma += (valor - media) ** 2
 
-    radicando = suma / len(valores) - 1
+    radicando = suma / len(valores)
 
     return sqrt(radicando)
 
